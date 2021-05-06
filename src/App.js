@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 import FamiliesTable from "./FamiliesTable";
 import VolunteersTable from "./VolunteersTable";
-import NewTable from "./NewTable";
+import OtherNewTable from "./OtherNewTable";
 
 export default function App() {
   const [tab, setTab] = useState("families");
@@ -32,7 +32,7 @@ export default function App() {
         volunteers{" "}
       </Button>
       {tab === "families" ? <FamiliesTable /> : <VolunteersTable />}
-      <NewTable />
+      <OtherNewTable />
     </>
   );
 }
